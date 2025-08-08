@@ -27,6 +27,9 @@ class Solution {
         while(curr!=null){
             if(curr.random!=null)
             curr.next.random=curr.random.next;
+            else{
+                curr.next.random=null;
+            }
             curr=curr.next.next;
             
         }
